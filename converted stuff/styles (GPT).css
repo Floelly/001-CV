@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #ffffff;
+    color: #222;
+}
+
+.cv-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #003366;
+    color: white;
+    padding: 30px;
+}
+
+.sidebar h1 {
+    font-size: 2.2em;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.1em;
+}
+
+.sidebar h2 {
+    font-weight: normal;
+    margin: 5px 0 20px;
+    font-size: 1.2em;
+}
+
+.sidebar h3 {
+    margin-top: 30px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 5px;
+}
+
+.sidebar p, 
+.sidebar ul {
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 4px 0;
+}
+
+.sidebar a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+/* Main content */
+.main-content {
+    padding: 40px;
+}
+
+.main-content h3 {
+    color: #003366;
+    text-transform: uppercase;
+    margin-top: 0;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.main-content h4 {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.company {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.main-content ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.main-content p, 
+.main-content li {
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        text-align: center;
+    }
+}
